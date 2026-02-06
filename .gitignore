@@ -38,9 +38,15 @@ env/
 *.swo
 *~
 
+# Claude Code (machine-specific paths — see SETUP.md)
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db
+
+# draw.io backups
+.$*.bkp
 
 # Jupyter
 .ipynb_checkpoints/
