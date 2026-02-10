@@ -36,10 +36,14 @@ import sys
 import signal
 import logging
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Ensure project root is on path
 PROJECT_ROOT = Path(__file__).parent.resolve()
 sys.path.insert(0, str(PROJECT_ROOT))
+
+# Load environment variables from .env file (override any existing vars)
+load_dotenv(override=True)
 
 from agent_factory import (
     AgentFactory,
